@@ -15,38 +15,30 @@ public class Professors_Model extends Person{
 
   
       
-    public Professors_Model(int id_Login, String password, String name, String email, boolean gender, Date dateOfBirth, String queQuan) {
+    public Professors_Model(int id_Login, String password, 
+            String name, String email, boolean gender, Date dateOfBirth, String queQuan) {
         super(name, gender, dateOfBirth, queQuan);
         this.id_Login = id_Login;
         this.email = email;
         this.password = password;
     }
-
     public String getEmail() {
         return email;
     }
-
     public void setEmail(String email) {
         this.email = email;
     }
-
-    
-
     public int getId_Login() {
         return id_Login;
     }
-
     public void setId_Login(int id_Login) {
         this.id_Login = id_Login;
     }
-
     public String getPassword() {
         return password;
     }
-
     public void setPassword(String password) {
         this.password = password;
     }
-     
-    
+        
 }

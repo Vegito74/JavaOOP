@@ -38,56 +38,56 @@ public class AnimateBTT {
 
     public void AnimattIni() {
         mostrarColor(btt_inicio, btt_inicio, lbl_ini, "/iconos/home-altVr.png");
-        establecColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/users-altV.png");
-        establecColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/users-altV.png");
-        establecColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/users-altV.png");
-        establecColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/users-altV.png");
-        establecColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/users-altV.png");
+        establecColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/icons8_student_male_80px.png");
+        establecColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/icons8_class_50px_2.png");
+        establecColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/icons8_book_64px.png");
+        establecColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/icons8_grades_80px.png");
+        establecColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/icons8_circled_user_64px.png");
     }
 
     public void AnimattPrueba() {
-        mostrarColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/users-altVr.png");
+        mostrarColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/icons8_student_male_80px.png");
         establecColor(btt_inicio, btt_inicio, lbl_ini, "/iconos/home-altV.png");
-        establecColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/users-altV.png");
-        establecColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/users-altV.png");
-         establecColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/users-altV.png");
-        establecColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/users-altV.png");
+        establecColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/icons8_class_50px_2.png");
+        establecColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/icons8_book_64px.png");
+         establecColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/icons8_grades_80px.png");
+        establecColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/icons8_circled_user_64px.png");
     }
 
     public void AnimattPruebaOne() {
-        mostrarColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/users-altVr.png");
+        mostrarColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/icons8_class_50px_2.png");
         establecColor(btt_inicio, btt_inicio, lbl_ini, "/iconos/home-altV.png");
-        establecColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/users-altV.png");
-        establecColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/users-altV.png");
-         establecColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/users-altV.png");
-        establecColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/users-altV.png");
+        establecColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/icons8_student_male_80px.png");
+        establecColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/icons8_book_64px.png");
+         establecColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/icons8_grades_80px.png");
+        establecColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/icons8_circled_user_64px.png");
     }
 
     public void AnimattPruebaTwo() {
-        mostrarColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/users-altVr.png");
+        mostrarColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/icons8_book_64px.png");
         establecColor(btt_inicio, btt_inicio, lbl_ini, "/iconos/home-altV.png");
-        establecColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/users-altV.png");
-        establecColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/users-altV.png");
-         establecColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/users-altV.png");
-        establecColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/users-altV.png");
+        establecColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/icons8_student_male_80px.png");
+        establecColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/icons8_class_50px_2.png");
+         establecColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/icons8_grades_80px.png");
+        establecColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/icons8_circled_user_64px.png");
     }
     
     public void AnimattPruebaTwo1() {
-        establecColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/users-altVr.png");
+        establecColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/icons8_book_64px.png");
         establecColor(btt_inicio, btt_inicio, lbl_ini, "/iconos/home-altV.png");
-        establecColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/users-altV.png");
-        establecColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/users-altV.png");
-         mostrarColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/users-altV.png");
-        establecColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/users-altV.png");
+        establecColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/icons8_student_male_80px.png");
+        establecColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/icons8_class_50px_2.png");
+         mostrarColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/icons8_grades_80px.png");
+        establecColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/icons8_circled_user_64px.png");
     }
     
     public void AnimattPruebaTwo2() {
-        establecColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/users-altVr.png");
+        establecColor(btt_pruebaTwo, btt_pruebaTwo, lbl_pruebaTwo, "/iconos/icons8_book_64px.png");
         establecColor(btt_inicio, btt_inicio, lbl_ini, "/iconos/home-altV.png");
-        establecColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/users-altV.png");
-        establecColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/users-altV.png");
-         establecColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/users-altV.png");
-        mostrarColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/users-altV.png");
+        establecColor(btt_prueba, btt_prueba, lbl_prueba, "/iconos/icons8_student_male_80px.png");
+        establecColor(btt_pruebaOne, btt_pruebaOne, lbl_pruebaOne, "/iconos/icons8_class_50px_2.png");
+         establecColor(btt_pruebaTwo1, btt_pruebaTwo1, lbl_pruebaTwo1, "/iconos/icons8_grades_80px.png");
+        mostrarColor(btt_pruebaTwo2, btt_pruebaTwo2, lbl_pruebaTwo2, "/iconos/icons8_circled_user_64px.png");
     }
     
 }

@@ -6,12 +6,14 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import menu.sr.blanco.MenuOpcion;
 import model.Lop_Model;
 
 public class Lop_DAO implements BasicFunction_Interface<Lop_Model> {
 
-    public static SinhVien_DAO getInstance() {
-        return new SinhVien_DAO();
+    public static Lop_DAO getInstance() {
+        return new Lop_DAO();
     }
     @Override
     public int add(Lop_Model t) {
@@ -27,11 +29,10 @@ public class Lop_DAO implements BasicFunction_Interface<Lop_Model> {
             kq = st.executeUpdate();
             jdbc_Connect.closeConnection(conn);
         } catch (SQLException sQLException) {
-            sQLException.printStackTrace();
+             JOptionPane.showMessageDialog(null, "Đã có lớp này không thể thêm!", "Thông báo", JOptionPane.WARNING_MESSAGE);
         }
         return kq;
     }
-
     @Override
     public int update(Lop_Model t) {
         int kq = 0;
@@ -49,7 +50,6 @@ public class Lop_DAO implements BasicFunction_Interface<Lop_Model> {
         }
         return kq;
     }
-
     @Override
     public int delete(Lop_Model t) {
         int kq = 0;
@@ -61,11 +61,11 @@ public class Lop_DAO implements BasicFunction_Interface<Lop_Model> {
             kq = st.executeUpdate();
             jdbc_Connect.closeConnection(conn);
         } catch (SQLException e) {
-            e.printStackTrace();
+           
+                        JOptionPane.showMessageDialog( null, "Đang có học sinh theo học ở lớp này!", "Không thể xóa!", JOptionPane.ERROR_MESSAGE);
         }
         return kq;
     }
-
     @Override
     public ArrayList<Lop_Model> selectAll() {
         ArrayList<Lop_Model> kqArrayList = new ArrayList<>();
@@ -86,7 +86,5 @@ public class Lop_DAO implements BasicFunction_Interface<Lop_Model> {
             e.printStackTrace();
         }
         return kqArrayList;
-    }
-    
-     
+    }    
 }

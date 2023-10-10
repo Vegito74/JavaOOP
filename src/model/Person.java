@@ -24,31 +24,24 @@ public abstract class Person {
     public String getName() {
         return name;
     }
-
     public boolean isGender() {
         return gender;
     }
-
     public Date getDateOfBirth() {
         return dateOfBirth;
     }
-
     public String getQueQuan() {
         return queQuan;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public void setGender(boolean gender) {
         this.gender = gender;
     }
-
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-
     public void setQueQuan(String queQuan) {
         this.queQuan = queQuan;
     }

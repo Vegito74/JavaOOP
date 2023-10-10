@@ -34,7 +34,17 @@ public class TextField extends JTextField {
     public void setLineColor(Color lineColor) {
         this.lineColor = lineColor;
     }
+    
+     public String getHelperText() {
+        return helperText;
+    }
 
+    public void setHelperText(String helperText) {
+        this.helperText = helperText;
+        repaint();
+    }
+
+    private String helperText = "";
     private final Animator animator;
     private boolean animateHinText = true;
     private float location;

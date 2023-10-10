@@ -49,7 +49,7 @@ public class ButtonBadges extends JButton {
     public ButtonBadges() {
         setContentAreaFilled(false);
         setBorder(new EmptyBorder(5, 5, 5, 5));
-        setBackground(Color.WHITE);
+        setBackground(Color.BLUE);
         setCursor(new Cursor(Cursor.HAND_CURSOR));
         addMouseListener(new MouseAdapter() {
             @Override

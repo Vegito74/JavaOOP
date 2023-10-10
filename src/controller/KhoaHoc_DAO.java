@@ -11,10 +11,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import model.KhoaHoc_Model;
 
 public class KhoaHoc_DAO implements BasicFunction_Interface<KhoaHoc_Model>{
-
+public static KhoaHoc_DAO getInstance() {
+        return new KhoaHoc_DAO();
+    }
      @Override
     public int add(KhoaHoc_Model t) {
         int kq = 0;
@@ -34,15 +37,14 @@ public class KhoaHoc_DAO implements BasicFunction_Interface<KhoaHoc_Model>{
         } catch (SQLException sQLException) {
             sQLException.printStackTrace();
         }
-        return kq;
-    }
-
+        return kq; }
     @Override
     public int update(KhoaHoc_Model t) {
         int kq = 0;
         try {
             Connection conn = jdbc_Connect.getConnection();
-            String sql = "UPDATE KhoaHoc SET TenKH = ?, MonHoc1 = ?, MonHoc2 = ?, MonHoc3 = ?, MonHoc4 = ? WHERE MaKH = ?";
+            String sql = "UPDATE KhoaHoc SET TenKH = ?, MonHoc1 = ?,"+
+                    " MonHoc2 = ?, MonHoc3 = ?, MonHoc4 = ? WHERE MaKH = ?";
             PreparedStatement st = conn.prepareStatement(sql);
             st.setString(1, t.getNameKH());
             st.setString(2, t.getMh1());
@@ -55,9 +57,7 @@ public class KhoaHoc_DAO implements BasicFunction_Interface<KhoaHoc_Model>{
         } catch (SQLException sQLException) {
             sQLException.printStackTrace();
         }
-        return kq;
-    }
-
+        return kq;}
     @Override
     public int delete(KhoaHoc_Model t) {
         int kq = 0;
@@ -69,11 +69,11 @@ public class KhoaHoc_DAO implements BasicFunction_Interface<KhoaHoc_Model>{
             kq = st.executeUpdate();
             jdbc_Connect.closeConnection(conn);
         } catch (SQLException e) {
-            e.printStackTrace();
+                      JOptionPane.showMessageDialog( null, "Khóa học đang được sử dụng!", "Không thể xóa!", JOptionPane.ERROR_MESSAGE);
+
         }
         return kq;
     }
-
     @Override
     public ArrayList<KhoaHoc_Model> selectAll() {
         ArrayList<KhoaHoc_Model> kqArrayList = new ArrayList<>();
@@ -98,5 +98,24 @@ public class KhoaHoc_DAO implements BasicFunction_Interface<KhoaHoc_Model>{
         }
         return kqArrayList;
     }
+      public boolean checkDataExists_KhoaHoc(String MaKhoaHoc, String TenKhoHoc) {
+        try {
+            Connection conn = jdbc_Connect.getConnection();
+            String sql = "SELECT COUNT(*) FROM KhoaHoc WHERE MaKH = ? AND TenKH = ?";
+            PreparedStatement st = conn.prepareStatement(sql);
+            st.setString(1,MaKhoaHoc );
+            st.setString(2, TenKhoHoc);
+            ResultSet rs = st.executeQuery();
+            if (rs.next()) {
+                int count = rs.getInt(1);
+                return count > 0;
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+            // Xử lý lỗi nếu cần
+        }
+        return false;
+    }
+
 
 }

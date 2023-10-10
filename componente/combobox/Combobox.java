@@ -65,7 +65,8 @@ public class Combobox<E> extends JComboBox<E> {
                 Component com = super.getListCellRendererComponent(jlist, o, i, bln, bln1);
                 setBorder(new EmptyBorder(5, 5, 5, 5));
                 if (bln) {
-                    com.setBackground(new Color(240, 240, 240));
+                    //240
+                    com.setBackground(new Color(52, 133, 191));
                 }
                 return com;
             }
